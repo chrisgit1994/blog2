@@ -10,9 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <style>
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        </style>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
 
         <style>
             body {
@@ -23,7 +21,18 @@
 
     <body>
         <div class="container mx-auto">
-            <x-alert/>
+            <x-alert color="blue" class="mb-4">
+                <x-slot name="title">
+                    Titulo 1
+                </x-slot>
+                Hola mundo!
+            </x-alert>
+            <x-alert color="orange">
+                <x-slot name="title">
+                    Titulo 2
+                </x-slot>
+                Hola mundo2!
+            </x-alert>
         </div>
     </body>
 </html>
