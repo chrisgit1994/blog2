@@ -27,12 +27,10 @@
                 </x-slot>
                 Hola mundo!
             </x-alert>
-            <x-alert color="orange">
-                <x-slot name="title">
-                    Titulo 2
-                </x-slot>
-                Hola mundo2!
-            </x-alert>
+           
+            <x-alert2 color="blue">
+                Hola mundo!
+            </x-alert2>
         </div>
     </body>
 </html>
